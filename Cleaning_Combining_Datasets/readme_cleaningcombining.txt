@@ -17,5 +17,9 @@ Due to a lack of data points, the dataset created using the above scripts was no
 inclusion reflects some of the preliminary EDA that took place but was not included in our final report.
 
 To give our models more data points, we pivoted from using data by county to using data by zip code. This would 
-give us around 1,500 data points to use with our models.
+give us around 1,500 data points to use with our models. To accompany this, a dataset with NY income by county was 
+retrieved from the United States Census Bureau. 
 
+zip_code_income.py pulls mean annual income by zip code in NY. This data is then combined with Aashi's 'Solar_Project.csv'
+in get_prod_by_zip.py to combine production data and income data. The resulting dataset has aggregate solar system size and 
+production by zip code along with mean income by zip.
